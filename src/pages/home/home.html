@@ -1,0 +1,32 @@
+<ion-header >
+  <ion-navbar>
+    <ion-title style="text-align:center">
+      Listas de compras
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list >
+    <ion-item-sliding color="danger" *ngFor="let chave of listas" >
+
+        <ion-item (click)="irProdutos(chave)">
+          <ion-label>
+            <h2> {{ (chave ? "Lista de compra do dia " + chave  : '')  }}</h2>
+          </ion-label>
+        </ion-item>
+        <ion-item-options side="left" icon-end >
+              <button ion-button color="danger" (click)="delete(chave)">
+                <ion-icon name="trash"></ion-icon>
+                  Delete
+                </button>
+              </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-fab bottom right>
+      <button ion-fab (click)="irProdutos()" >
+        <ion-icon name="add" ></ion-icon>
+      </button>
+  </ion-fab>
+</ion-content>
