@@ -1,2 +1,2 @@
-# mercadinho
-Lista de mercado feita com ionic 3, para estudar a linguagem 
+# Mercadinho
+Projeto com ionic para criar uma lista de compras no mercado.
