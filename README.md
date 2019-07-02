@@ -1,2 +1,2 @@
 # Mercadinho
-Projeto com ionic para criar uma lista de compras no mercado.
+Projeto criado com "ionic" para uma lista de compras no mercado.
